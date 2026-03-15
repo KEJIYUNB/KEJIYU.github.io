@@ -1,105 +1,341 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>科技鱼 · KEJIYUNB</title>
-    <style>
-        /* 基础重置 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: #10131f;
-            color: #d1d5db;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            line-height: 1.5;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #31b55a;
-            margin-bottom: 1rem;
-        }
-        .intro {
-            background-color: #1a2235;
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-            border-left: 4px solid #31b55a;
-            text-align: left;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #31b55a;
-            color: white;
-            font-weight: 500;
-            padding: 14px 28px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: background-color 0.2s;
-            margin: 10px 0;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #2aa350;
-        }
-        .btn.secondary {
-            background-color: #2a3549;
-            color: #d1d5db;
-            font-size: 1rem;
-            padding: 10px 20px;
-        }
-        .btn.secondary:hover {
-            background-color: #3a4559;
-        }
-        .footer {
-            margin-top: 40px;
-            color: #6b7280;
-            font-size: 0.875rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>科技鱼 · KEJIYUNB</title>
+  <meta name="description" content="KEJIYUNB 的个人小站，记录代码、项目和一些有趣的尝试。" />
+  <style>
+    /* 基础重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0f1320;
+      --bg-soft: rgba(24, 31, 49, 0.82);
+      --panel: rgba(26, 34, 53, 0.88);
+      --panel-border: rgba(255, 255, 255, 0.08);
+      --text: #e5e7eb;
+      --text-soft: #c7ced9;
+      --muted: #8b95a7;
+      --accent: #31b55a;
+      --accent-hover: #2aa350;
+      --secondary: #2a3549;
+      --secondary-hover: #38455c;
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top center, rgba(49, 181, 90, 0.16), transparent 32%),
+        radial-gradient(circle at 20% 20%, rgba(49, 181, 90, 0.08), transparent 25%),
+        radial-gradient(circle at 80% 10%, rgba(91, 132, 255, 0.08), transparent 24%),
+        linear-gradient(180deg, #101522 0%, #0d111b 100%);
+      display: flex;
+      justify-content: center;
+      padding: 72px 20px 36px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 32px 32px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent 85%);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-soft);
+      font-size: 0.92rem;
+      margin-bottom: 18px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.08;
+      color: #ffffff;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .brand-accent {
+      color: var(--accent);
+    }
+
+    .subtitle {
+      font-size: clamp(1.02rem, 2.2vw, 1.2rem);
+      color: var(--text-soft);
+      margin-bottom: 12px;
+    }
+
+    .slogan {
+      font-size: 0.98rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .intro {
+      position: relative;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: var(--radius-xl);
+      padding: 28px 26px;
+      margin: 0 auto 28px;
+      text-align: left;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      overflow: hidden;
+    }
+
+    .intro::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(49, 181, 90, 0.12), transparent 45%);
+      pointer-events: none;
+    }
+
+    .intro::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      bottom: 18px;
+      left: 0;
+      width: 4px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #46d36f 0%, #31b55a 100%);
+      box-shadow: 0 0 20px rgba(49, 181, 90, 0.35);
+    }
+
+    .intro p {
+      position: relative;
+      z-index: 1;
+      color: var(--text-soft);
+      font-size: 1.06rem;
+    }
+
+    .intro p + p {
+      margin-top: 10px;
+    }
+
+    .intro strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      font-size: 1.06rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      will-change: transform;
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn.primary {
+      background: linear-gradient(180deg, #39c864 0%, #31b55a 100%);
+      color: #ffffff;
+      box-shadow: 0 12px 30px rgba(49, 181, 90, 0.28);
+    }
+
+    .btn.primary:hover {
+      background: linear-gradient(180deg, #3fd76d 0%, #2aa350 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(49, 181, 90, 0.36);
+    }
+
+    .btn.secondary {
+      background: rgba(42, 53, 73, 0.78);
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .btn.secondary:hover {
+      background: var(--secondary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+      margin-bottom: 36px;
+    }
+
+    .link-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: var(--radius-pill);
+      color: var(--muted);
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.2s ease;
+      font-size: 0.94rem;
+    }
+
+    .link-chip:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.12);
+      transform: translateY(-1px);
+    }
+
+    .footer {
+      margin-top: 8px;
+      color: #6f7a8d;
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+
+    .footer-line {
+      width: 88px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      margin: 0 auto 16px;
+    }
+
+    .footer .small {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.82rem;
+      color: #5f697b;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding-top: 48px;
+      }
+
+      .intro {
+        padding: 24px 20px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .links {
+        gap: 8px;
+      }
+
+      .link-chip {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🐟 科技鱼</h1>
+  <main class="container">
+    <div class="hero-badge">🐟 KEJIYUNB · Personal Site</div>
 
-        <div class="intro">
-            <p style="margin-bottom: 10px;">你好，我是 KEJIYUNB。</p>
-            <p>一条对技术感兴趣的鱼。这里是我的个人小站，所有的代码和项目都会放在 GitHub 上。</p>
-        </div>
+    <h1><span class="brand-accent">科技鱼</span> / KEJIYUNB</h1>
+    <p class="subtitle">一条喜欢技术、代码和有趣项目的鱼。</p>
+    <p class="slogan">这里记录我的作品、折腾过程，以及一些小而好玩的尝试。</p>
 
-        <!-- GitHub 主按钮 -->
-        <a href="https://github.com/KEJIYUNB/" target="_blank" class="btn">
-            📂 查看我的 GitHub
-        </a>
+    <section class="intro">
+      <p><strong>你好，我是 KEJIYUNB。</strong></p>
+      <p>
+        欢迎来到我的个人小站。这里会放一些我写过的代码、做过的项目，
+        还有偶尔折腾出来的有趣作品。
+      </p>
+      <p>
+        大部分内容都会同步到 GitHub，你也可以顺手去玩一下下面的小游戏。
+      </p>
+    </section>
 
-        <!-- 俄罗斯方块入口 -->
-        <div style="margin-top: 20px;">
-            <a href="/ELSFK.html" class="btn secondary">
-                🎮 玩俄罗斯方块
-            </a>
-        </div>
+    <div class="actions">
+      <a href="https://github.com/KEJIYUNB/" target="_blank" rel="noopener noreferrer" class="btn primary">
+        📂 查看我的 GitHub
+      </a>
 
-        <div class="footer">
-            © 2026 科技鱼 · 由 GitHub Pages 驱动
-        </div>
+      <a href="/ELSFK.html" class="btn secondary">
+        🎮 玩俄罗斯方块
+      </a>
     </div>
+
+    <div class="links">
+      <a href="https://github.com/KEJIYUNB/" target="_blank" rel="noopener noreferrer" class="link-chip">🌐 GitHub</a>
+      <a href="/ELSFK.html" class="link-chip">🕹️ 小游戏</a>
+      <a href="mailto:kejiyunb@gmail.com" class="link-chip">✉️ 联系我</a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-line"></div>
+      <div>© 2026 科技鱼 · Built with GitHub Pages</div>
+      <span class="small">简洁一点，折腾一点，顺便把有趣的东西留下来。</span>
+    </footer>
+  </main>
 </body>
 </html>
