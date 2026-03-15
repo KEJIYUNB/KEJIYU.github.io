@@ -40,11 +40,14 @@
         "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       min-height: 100vh;
       color: var(--text);
+      /* 动态渐变背景（覆盖原先的 linear-gradient） */
       background:
         radial-gradient(circle at top center, rgba(49, 181, 90, 0.16), transparent 32%),
         radial-gradient(circle at 20% 20%, rgba(49, 181, 90, 0.08), transparent 25%),
         radial-gradient(circle at 80% 10%, rgba(91, 132, 255, 0.08), transparent 24%),
-        linear-gradient(180deg, #101522 0%, #0d111b 100%);
+        linear-gradient(180deg, #101522, #0d111b, #101522, #0d111b);
+      background-size: 200% 200%;
+      animation: gradientShift 16s ease infinite;
       display: flex;
       justify-content: center;
       padding: 72px 20px 36px;
@@ -52,6 +55,13 @@
       position: relative;
     }
 
+    @keyframes gradientShift {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 100% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    /* 网格线（保留） */
     body::before {
       content: "";
       position: fixed;
@@ -62,6 +72,32 @@
         linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
       background-size: 32px 32px;
       mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent 85%);
+      z-index: 0;
+    }
+
+    /* 粒子背景容器 */
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none; /* 让粒子不干扰鼠标事件 */
+    }
+
+    /* 鼠标跟随光晕 */
+    #glow {
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle at center, rgba(49, 181, 90, 0.25), transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      transition: transform 0.05s linear;
+      filter: blur(20px);
     }
 
     .container {
@@ -69,7 +105,7 @@
       max-width: 760px;
       text-align: center;
       position: relative;
-      z-index: 1;
+      z-index: 3; /* 保证内容在光晕和粒子之上 */
     }
 
     .hero-badge {
@@ -125,6 +161,7 @@
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       overflow: hidden;
+      z-index: 4;
     }
 
     .intro::before {
@@ -295,8 +332,15 @@
       }
     }
   </style>
+  <!-- 引入 particles.js 库 -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
+  <!-- 粒子背景容器 -->
+  <div id="particles-js"></div>
+  <!-- 鼠标跟随光晕 -->
+  <div id="glow"></div>
+
   <main class="container">
     <div class="hero-badge">🐟 KEJIYUNB · Personal Site</div>
 
@@ -337,5 +381,33 @@
       <span class="small">简洁一点，折腾一点，顺便把有趣的东西留下来。</span>
     </footer>
   </main>
+
+  <script>
+    // 粒子背景配置
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#31b55a" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#31b55a", opacity: 0.3, width: 1 },
+        move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } },
+        modes: { grab: { distance: 180, line_linked: { opacity: 0.6 } }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+
+    // 鼠标跟随光晕
+    const glow = document.getElementById('glow');
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+  </script>
 </body>
 </html>
