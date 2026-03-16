@@ -99,8 +99,6 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-            width: 240px;
-            height: 400px;
             position: relative;
             transition: transform 0.1s ease;
             touch-action: none;
@@ -525,7 +523,7 @@
 
         <div class="game-area">
             <div id="game-board">
-                <canvas id="game-canvas" width="240" height="400"></canvas>
+                <canvas id="game-canvas"></canvas>
                 <div id="game-over" class="game-over">
                     <h2>游戏结束!</h2>
                     <p>最终得分: <span id="final-score" class="highlight">0</span></p>
@@ -689,6 +687,8 @@
             const COLS = 10;
             const ROWS = 20;
             const BLOCK_SIZE = 20;
+            const BOARD_WIDTH = COLS * BLOCK_SIZE;
+            const BOARD_HEIGHT = ROWS * BLOCK_SIZE;
 
             const COLORS = [
                 null,
@@ -756,7 +756,15 @@
             const downBtn = document.getElementById('down-btn');
             const dropBtn = document.getElementById('drop-btn');
 
+            function setupBoardSize() {
+                canvas.width = BOARD_WIDTH;
+                canvas.height = BOARD_HEIGHT;
+                gameBoard.style.width = `${BOARD_WIDTH}px`;
+                gameBoard.style.height = `${BOARD_HEIGHT}px`;
+            }
+
             function init() {
+                setupBoardSize();
                 highScoreElement.textContent = String(highScore);
                 resetBoard();
                 drawBoard();
