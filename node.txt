@@ -6,11 +6,11 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 proxies:
-  - name: "香港专线-电信-1"
+  - name: "新加坡专线-2"
     type: vless
-    server: 113.108.6.85
-    port: 6379
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
+    server: 209.248.4.3
+    port: 443
+    uuid: fccdfa5014294ef9adf62c9d9b53582b
     flow: xtls-rprx-vision
     network: tcp
     tls: true
@@ -20,11 +20,53 @@ proxies:
     client-fingerprint: chrome
     servername: peer.pan.baidu.com
 
-  - name: "香港专线-移动-3"
+  - name: "美国-洛杉矶-2"
     type: vless
-    server: 120.241.115.19
+    server: 104.234.0.162
+    port: 443
+    uuid: fccdfa5014294ef9adf62c9d9b53582b
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
+      short-id: 96e03e0f184639ef
+    client-fingerprint: chrome
+    servername: peer.pan.baidu.com
+
+  - name: "日本-东京IEPL"
+    type: vless
+    server: 124.151.43.21
     port: 6379
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
+    uuid: fccdfa5014294ef9adf62c9d9b53582b
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
+      short-id: 96e03e0f184639ef
+    client-fingerprint: chrome
+    servername: peer.pan.baidu.com
+
+  - name: "香港专线-电信-2"
+    type: vless
+    server: 113.108.6.83
+    port: 6379
+    uuid: fccdfa5014294ef9adf62c9d9b53582b
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
+      short-id: 96e03e0f184639ef
+    client-fingerprint: chrome
+    servername: peer.pan.baidu.com
+
+  - name: "香港-D-4"
+    type: vless
+    server: i4.tjone.cn
+    port: 6379
+    uuid: fccdfa5014294ef9adf62c9d9b53582b
     flow: xtls-rprx-vision
     network: tcp
     tls: true
@@ -38,7 +80,7 @@ proxies:
     type: vless
     server: 202.46.227.64
     port: 6379
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
+    uuid: fccdfa5014294ef9adf62c9d9b53582b
     flow: xtls-rprx-vision
     network: tcp
     tls: true
@@ -48,11 +90,11 @@ proxies:
     client-fingerprint: chrome
     servername: peer.pan.baidu.com
 
-  - name: "香港专线-联通-4"
+  - name: "香港专线-联通-1"
     type: vless
-    server: 27.44.142.7
+    server: 58.251.139.169
     port: 6379
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
+    uuid: fccdfa5014294ef9adf62c9d9b53582b
     flow: xtls-rprx-vision
     network: tcp
     tls: true
@@ -62,95 +104,11 @@ proxies:
     client-fingerprint: chrome
     servername: peer.pan.baidu.com
 
-  - name: "日本-东京"
+  - name: "香港专线-移动-3"
     type: vless
-    server: 124.151.43.21
+    server: 120.241.115.19
     port: 6379
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
-    flow: xtls-rprx-vision
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
-      short-id: 96e03e0f184639ef
-    client-fingerprint: chrome
-    servername: peer.pan.baidu.com
-
-  - name: "美国-洛杉矶"
-    type: vless
-    server: 104.234.0.162
-    port: 443
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
-    flow: xtls-rprx-vision
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
-      short-id: 96e03e0f184639ef
-    client-fingerprint: chrome
-    servername: peer.pan.baidu.com
-
-  - name: "新加坡专线-1"
-    type: vless
-    server: 185.151.146.64
-    port: 443
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
-    flow: xtls-rprx-vision
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
-      short-id: 96e03e0f184639ef
-    client-fingerprint: chrome
-    servername: peer.pan.baidu.com
-
-  - name: "台湾"
-    type: vless
-    server: 220.130.75.219
-    port: 443
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
-    flow: xtls-rprx-vision
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
-      short-id: 96e03e0f184639ef
-    client-fingerprint: chrome
-    servername: peer.pan.baidu.com
-
-  - name: "德国"
-    type: vless
-    server: 57.129.80.194
-    port: 443
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
-    flow: xtls-rprx-vision
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
-      short-id: 96e03e0f184639ef
-    client-fingerprint: chrome
-    servername: peer.pan.baidu.com
-
-  - name: "英国"
-    type: vless
-    server: 51.38.81.196
-    port: 443
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
-    flow: xtls-rprx-vision
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14
-      short-id: 96e03e0f184639ef
-    client-fingerprint: chrome
-    servername: peer.pan.baidu.com
-
-  - name: "瑞士"
-    type: vless
-    server: 179.43.174.201
-    port: 443
-    uuid: c8fa9a07c9a34b5680e1bdaf49990db6
+    uuid: fccdfa5014294ef9adf62c9d9b53582b
     flow: xtls-rprx-vision
     network: tcp
     tls: true
@@ -164,17 +122,14 @@ proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
-      - "香港专线-电信-1"
-      - "香港专线-移动-3"
+      - "新加坡专线-2"
+      - "美国-洛杉矶-2"
+      - "日本-东京IEPL"
+      - "香港专线-电信-2"
+      - "香港-D-4"
       - "香港专线-BGP-1"
-      - "香港专线-联通-4"
-      - "日本-东京"
-      - "美国-洛杉矶"
-      - "新加坡专线-1"
-      - "台湾"
-      - "德国"
-      - "英国"
-      - "瑞士"
+      - "香港专线-联通-1"
+      - "香港专线-移动-3"
 
 rules:
   - MATCH,🚀 节点选择
