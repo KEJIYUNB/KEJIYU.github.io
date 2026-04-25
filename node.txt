@@ -6,7 +6,7 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 proxies:
-  - name: "台湾-彰化-3"
+  - name: "彰化节点-3"
     type: vless
     server: 220.130.75.219
     port: 443
@@ -20,7 +20,7 @@ proxies:
     client-fingerprint: chrome
     servername: peer.pan.baidu.com
 
-  - name: "法兰克福-德国"
+  - name: "德国-法兰克福"
     type: vless
     server: 57.129.80.194
     port: 443
@@ -34,7 +34,7 @@ proxies:
     client-fingerprint: chrome
     servername: peer.pan.baidu.com
 
-  - name: "贝德福德-英国"
+  - name: "英国-贝德福德"
     type: vless
     server: 51.38.81.196
     port: 443
@@ -48,7 +48,7 @@ proxies:
     client-fingerprint: chrome
     servername: peer.pan.baidu.com
 
-  - name: "瑞典-苏黎世"
+  - name: "瑞士-苏黎世"
     type: vless
     server: 179.43.174.201
     port: 443
@@ -62,14 +62,50 @@ proxies:
     client-fingerprint: chrome
     servername: peer.pan.baidu.com
 
+  - name: "中国台湾-09"
+    type: ss
+    server: 59.125.75.116
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: t0srmdxrm3xyjnvqze9wlx2myq3rjuv
+    plugin: obfs-local
+    plugin-opts:
+      mode: tls
+      host: 4f124a1.dl.nintendo.it:115448
+
+  - name: "中国台湾-29"
+    type: ss
+    server: 118.163.198.44
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: t0srmdxrm3xyjnvqze9wlx2myq3rjuv
+    plugin: obfs-local
+    plugin-opts:
+      mode: tls
+      host: 4f124a1.dl.nintendo.it:115448
+
+  - name: "中国台湾-32"
+    type: ss
+    server: 118.163.200.40
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: t0srmdxrm3xyjnvqze9wlx2myq3rjuv
+    plugin: obfs-local
+    plugin-opts:
+      mode: tls
+      host: 4f124a1.dl.nintendo.it:115448
+
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
-      - "台湾-彰化-3"
-      - "法兰克福-德国"
-      - "贝德福德-英国"
-      - "瑞典-苏黎世"
+      - "彰化节点-3"
+      - "德国-法兰克福"
+      - "英国-贝德福德"
+      - "瑞士-苏黎世"
+      - "中国台湾-09"
+      - "中国台湾-29"
+      - "中国台湾-32"
 
 rules:
   - MATCH,🚀 节点选择
