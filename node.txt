@@ -10,88 +10,70 @@ proxies:
     type: trojan
     server: oss-guangzhou.solidigm-zxcv.com
     port: 20018
-    password: 5E7C4766-F6DF-4447-C73C-9AC455FAF59D
-    network: tcp
-    tls: true
+    password: "5E7C4766-F6DF-4447-C73C-9AC455FAF59D"
+    udp: true
     sni: mpvideo.qpic.cn
-    insecure: true
-
-  - name: "香港 8"
-    type: trojan
-    server: oss-cn-guangzhou.solidigm-nvme.com
-    port: 20001
-    password: 214957B7-42CC-5177-8A89-187F8CAEE2CD
-    network: tcp
-    tls: true
-    sni: mpvideo.qpic.cn
-    insecure: true
+    skip-cert-verify: true
 
   - name: "香港 1"
     type: trojan
     server: oss-guangzhou.solidigm-zxcv.com
     port: 20001
-    password: 89CA9272-5B29-0BED-684F-A9743B5C9DE8
-    network: tcp
-    tls: true
+    password: "89CA9272-5B29-0BED-684F-A9743B5C9DE8"
+    udp: true
     sni: mpvideo.qpic.cn
-    insecure: true
+    skip-cert-verify: true
 
   - name: "香港 9"
     type: trojan
     server: oss-guangzhou.solidigm-zxcv.com
     port: 20003
-    password: 5E7C4766-F6DF-4447-C73C-9AC455FAF59D
-    network: tcp
-    tls: true
+    password: "5E7C4766-F6DF-4447-C73C-9AC455FAF59D"
+    udp: true
     sni: mpvideo.qpic.cn
-    insecure: true
+    skip-cert-verify: true
 
   - name: "香港 2"
     type: trojan
     server: oss-guangzhou.solidigm-zxcv.com
     port: 20001
-    password: 65B11D89-2A6B-E46E-E0F3-A0AC638DA671
-    network: tcp
-    tls: true
+    password: "65B11D89-2A6B-E46E-E0F3-A0AC638DA671"
+    udp: true
     sni: mpvideo.qpic.cn
-    insecure: true
+    skip-cert-verify: true
 
   - name: "新加坡 7"
     type: trojan
     server: oss-cn-guangzhou.solidigm-asdf.com
     port: 20021
-    password: A2127726-5C8A-4F8B-CF5A-E1E04814F397
-    network: tcp
-    tls: true
+    password: "A2127726-5C8A-4F8B-CF5A-E1E04814F397"
+    udp: true
     sni: mpvideo.qpic.cn
-    insecure: true
+    skip-cert-verify: true
 
   - name: "日本 1"
     type: trojan
     server: oss-shanghai.solidigm-zxcv.com
     port: 20031
-    password: 89CA9272-5B29-0BED-684F-A9743B5C9DE8
-    network: tcp
-    tls: true
+    password: "89CA9272-5B29-0BED-684F-A9743B5C9DE8"
+    udp: true
     sni: mpvideo.qpic.cn
-    insecure: true
+    skip-cert-verify: true
 
   - name: "美国 6"
     type: trojan
     server: oss-shanghai.solidigm-zxcv.com
     port: 20041
-    password: 04CB9165-53AB-14B9-B09A-54729C5D7F43
-    network: tcp
-    tls: true
+    password: "04CB9165-53AB-14B9-B09A-54729C5D7F43"
+    udp: true
     sni: mpvideo.qpic.cn
-    insecure: true
+    skip-cert-verify: true
 
 proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
       - "台湾 9"
-      - "香港 8"
       - "香港 1"
       - "香港 9"
       - "香港 2"
