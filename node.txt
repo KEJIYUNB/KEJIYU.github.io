@@ -1,76 +1,100 @@
 proxies:
-  - name: "美国 3"
-    type: trojan
-    server: oss-cn-shanghai.solidigm-asdf.com
-    port: 20041
-    password: A738E023-3EB5-15C2-AFC6-5DC646E7B826
-    udp: true
-    sni: mpvideo.qpic.cn
-    skip-cert-verify: true
-    client-fingerprint: chrome
-  - name: "日本 8"
-    type: trojan
-    server: oss-cn-shanghai.solidigm-nvme.com
-    port: 20031
-    password: 214957B7-42CC-5177-8A89-187F8CAEE2CD
-    udp: true
-    sni: mpvideo.qpic.cn
-    skip-cert-verify: true
-    client-fingerprint: chrome
-  - name: "新加坡 3"
-    type: trojan
-    server: oss-cn-guangzhou.solidigm-asdf.com
-    port: 20021
-    password: A738E023-3EB5-15C2-AFC6-5DC646E7B826
-    udp: true
-    sni: mpvideo.qpic.cn
-    skip-cert-verify: true
-    client-fingerprint: chrome
-  - name: "新加坡 5"
-    type: trojan
-    server: oss-cn-guangzhou.solidigm-nvme.com
-    port: 20022
-    password: 7A517AEF-8053-D8C6-C59A-CFC0A699DFA4
-    udp: true
-    sni: mpvideo.qpic.cn
-    skip-cert-verify: true
-    client-fingerprint: chrome
-  - name: "香港 1"
-    type: trojan
-    server: oss-guangzhou.solidigm-zxcv.com
-    port: 20001
-    password: 89CA9272-5B29-0BED-684F-A9743B5C9DE8
-    udp: true
-    sni: mpvideo.qpic.cn
-    skip-cert-verify: true
-    client-fingerprint: chrome
-  - name: "台湾 2"
-    type: trojan
-    server: oss-guangzhou.solidigm-zxcv.com
-    port: 20016
-    password: 65B11D89-2A6B-E46E-E0F3-A0AC638DA671
-    udp: true
-    sni: mpvideo.qpic.cn
-    skip-cert-verify: true
-    client-fingerprint: chrome
-  - name: "香港 5"
-    type: trojan
-    server: oss-cn-guangzhou.solidigm-nvme.com
-    port: 20002
-    password: 7A517AEF-8053-D8C6-C59A-CFC0A699DFA4
-    udp: true
-    sni: mpvideo.qpic.cn
-    skip-cert-verify: true
-    client-fingerprint: chrome
+  - name: "香港 3"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27020
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "香港 4"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27004
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "香港 2"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27002
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
   - name: "香港 7"
-    type: trojan
-    server: oss-cn-guangzhou.solidigm-asdf.com
-    port: 20001
-    password: A2127726-5C8A-4F8B-CF5A-E1E04814F397
-    udp: true
-    sni: mpvideo.qpic.cn
-    skip-cert-verify: true
-    client-fingerprint: chrome
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 28002
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "其他 12"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27033
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "新加坡 4"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27025
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "日本 1"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27026
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "美国 2"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27006
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
 
 rule-providers:
   private:
