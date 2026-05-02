@@ -1,11 +1,6 @@
+
 Proxies:
-  - name: "🇸🇬 坏小子雅各布 新加坡"
-    type: ss
-    server: afgawe-01.484845845.xyz
-    port: 37368
-    cipher: aes-128-gcm
-    password: 98b102df-4416-41f9-9684-9022700a6803
-  - name: "🇭🇰 香港 3"
+  - name: "香港 3"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27020
@@ -17,7 +12,7 @@ Proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 香港 4"
+  - name: "香港 4"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27004
@@ -29,7 +24,7 @@ Proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 香港 2"
+  - name: "香港 2"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27002
@@ -41,7 +36,7 @@ Proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 香港 7"
+  - name: "香港 7"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 28002
@@ -53,7 +48,7 @@ Proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇵🇭 菲律宾 12"
+  - name: "其他 12"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27033
@@ -65,7 +60,7 @@ Proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇸🇬 新加坡 4"
+  - name: "新加坡 4"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27025
@@ -77,7 +72,7 @@ Proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇯🇵 日本 1"
+  - name: "日本 1"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27026
@@ -89,7 +84,7 @@ Proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇺🇸 美国 2"
+  - name: "美国 2"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27006
@@ -101,6 +96,12 @@ Proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "坏小子雅各布 新加坡 emby 0.01倍节点"
+    type: ss
+    server: afgawe-01.484845845.xyz
+    port: 37368
+    cipher: aes-128-gcm
+    password: 98b102df-4416-41f9-9684-9022700a6803
 
 rule-providers:
   private:
