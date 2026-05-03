@@ -293,4 +293,4 @@ rules:
   - 'RULE-SET,geolocation-!cn,PROXY'
   - 'RULE-SET,cn_domain,DIRECT'
   - 'RULE-SET,cn_ip,DIRECT'
-  - 'MATCH,PROXY
+  - 'MATCH,PROXY'
