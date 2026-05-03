@@ -95,71 +95,72 @@ proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 香港 18（新）"
+  # --- 以下为新增节点 ---
+  - name: "🇺🇸 美国 03（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8718
+    port: 8773
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-14jUM6L5XQ.download.microsoft.com
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
     udp: true
-  - name: "🇭🇰 香港 17（新）"
+  - name: "🇯🇵 日本 09（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8717
+    port: 8769
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-14jUM6L5XQ.download.microsoft.com
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
     udp: true
-  - name: "🇭🇰 香港 16（新）"
+  - name: "🇸🇬 新加坡 05（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8716
+    port: 8725
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-14jUM6L5XQ.download.microsoft.com
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
     udp: true
-  - name: "🇸🇬 新加坡 04（新）"
+  - name: "🇭🇰 香港 10（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8724
+    port: 8760
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-14jUM6L5XQ.download.microsoft.com
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
     udp: true
-  - name: "🇯🇵 日本 06（新）"
+  - name: "🇭🇰 香港 04（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8766
+    port: 8754
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-14jUM6L5XQ.download.microsoft.com
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
     udp: true
-  - name: "🇺🇸 美国 08（新）"
+  - name: "🇭🇰 香港 05（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8778
+    port: 8755
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-14jUM6L5XQ.download.microsoft.com
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
     udp: true
 
 rule-providers:
