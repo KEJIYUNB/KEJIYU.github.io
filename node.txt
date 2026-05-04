@@ -1,4 +1,4 @@
-proxies:
+Proxies:
   - name: "🇭🇰 香港 3"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
@@ -95,7 +95,6 @@ proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  # --- 以下为新增节点 ---
   - name: "🇺🇸 美国 03（新）"
     type: ss
     server: efan118958656.efan1158958.com
@@ -161,6 +160,35 @@ proxies:
     plugin-opts:
       mode: http
       host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  # --- 雅各布 IPv6 新增节点 ---
+  - name: "🇯🇵 日本 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awsjp.tetocloud.store
+    port: 60445
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇺🇸 美国 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awsjp.tetocloud.store
+    port: 24677
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇹🇼 台湾 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: "2600:1900:4030:98c0::"
+    port: 80
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇸🇬 新加坡 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awssg.tetocloud.store
+    port: 53647
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
     udp: true
 
 rule-providers:
