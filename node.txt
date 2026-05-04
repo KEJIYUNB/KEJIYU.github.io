@@ -1,4 +1,4 @@
-proxies
+proxies:
   - name: "🇭🇰 香港 3"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
