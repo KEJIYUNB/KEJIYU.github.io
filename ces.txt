@@ -1,209 +1,308 @@
-proxies:
-  - alterId: 0
-    cipher: auto
-    http-opts:
-      headers:
-        Host:
-          - gw.alicdn.com
-      path:
-        - /
-    name: "\U0001F1F9\U0001F1FCTW_1|4.4MB/s"
-    network: http
-    port: 27164
-    server: 45.192.202.19
+Proxies:
+  - name: "🇭🇰 香港 3"
     type: vmess
-    udp: true
-    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
-    client-fingerprint: chrome
-  - alterId: 0
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27020
     cipher: auto
-    http-opts:
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    network: ws
+    ws-opts:
+      path: /hls
       headers:
-        Host:
-          - gw.alicdn.com
-      path:
-        - /
-    name: "\U0001F1F2\U0001F1F4MO_1|3.2MB/s"
-    network: http
-    port: 46934
-    server: 82.40.42.194
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇭🇰 香港 4"
     type: vmess
-    udp: true
-    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
-    client-fingerprint: chrome
-  - alterId: 0
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27004
     cipher: auto
-    http-opts:
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    network: ws
+    ws-opts:
+      path: /hls
       headers:
-        Host:
-          - gw.alicdn.com
-      path:
-        - /
-    name: "\U0001F1ED\U0001F1F0HK_1|3.3MB/s"
-    network: http
-    port: 43257
-    server: 45.192.202.19
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇭🇰 香港 2"
     type: vmess
-    udp: true
-    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
-    client-fingerprint: chrome
-  - alterId: 0
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27002
     cipher: auto
-    http-opts:
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    network: ws
+    ws-opts:
+      path: /hls
       headers:
-        Host:
-          - gw.alicdn.com
-      path:
-        - /
-    name: "\U0001F1F8\U0001F1ECSG_1|2.0MB/s"
-    network: http
-    port: 39722
-    server: 82.40.42.194
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇭🇰 香港 7"
     type: vmess
-    udp: true
-    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
-    client-fingerprint: chrome
-  - alterId: 0
+    server: 366-1095.rabbitpro-in-3.com
+    port: 28002
     cipher: auto
-    http-opts:
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    network: ws
+    ws-opts:
+      path: /hls
       headers:
-        Host:
-          - gw.alicdn.com
-      path:
-        - /
-    name: "\U0001F1E9\U0001F1EADE_1|1.6MB/s"
-    network: http
-    port: 11180
-    server: 37.114.38.81
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇵🇭 菲律宾 12"
     type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27033
+    cipher: auto
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇸🇬 新加坡 4"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27025
+    cipher: auto
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇯🇵 日本 1"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27026
+    cipher: auto
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇺🇸 美国 2"
+    type: vmess
+    server: 366-1095.rabbitpro-in-3.com
+    port: 27006
+    cipher: auto
+    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
+    alterId: 0
+    network: ws
+    ws-opts:
+      path: /hls
+      headers:
+        Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇺🇸 美国 03（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8773
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
     udp: true
-    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
-    client-fingerprint: chrome
+  - name: "🇯🇵 日本 09（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8769
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇸🇬 新加坡 05（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8725
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 10（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8760
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 04（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8754
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 05（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8755
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  # --- 雅各布 IPv6 新增节点严格格式 ---
+  - name: "🇯🇵 日本 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awsjp.tetocloud.store
+    port: 60445
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇺🇸 美国 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awsjp.tetocloud.store
+    port: 24677
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇹🇼 台湾 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: "2600:1900:4030:98c0::"
+    port: 80
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇸🇬 新加坡 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awssg.tetocloud.store
+    port: 53647
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+
 rule-providers:
   private:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/private.yaml
+    url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/private.yaml
     path: ./ruleset/private.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   cn_domain:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cn.yaml
+    url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cn.yaml
     path: ./ruleset/cn_domain.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   telegram_domain:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.yaml
+    url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.yaml
     path: ./ruleset/telegram_domain.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   google_domain:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google.yaml
+    url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google.yaml
     path: ./ruleset/google_domain.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   geolocation-!cn:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-!cn.yaml
+    url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-!cn.yaml
     path: ./ruleset/geolocation-!cn.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   cn_ip:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cn.yaml
+    url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cn.yaml
     path: ./ruleset/cn_ip.yaml
     behavior: ipcidr
     interval: 86400
     format: yaml
     type: http
   telegram_ip:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.yaml
+    url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.yaml
     path: ./ruleset/telegram_ip.yaml
     behavior: ipcidr
     interval: 86400
     format: yaml
     type: http
   google_ip:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/google.yaml
+    url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/google.yaml
     path: ./ruleset/google_ip.yaml
     behavior: ipcidr
     interval: 86400
     format: yaml
     type: http
   bing:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bing/Bing.yaml
+    url: https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bing/Bing.yaml
     path: ./ruleset/bing.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   copilot:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Copilot/Copilot.yaml
+    url: https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Copilot/Copilot.yaml
     path: ./ruleset/copilot.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   claude:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude.yaml
+    url: https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude.yaml
     path: ./ruleset/claude.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   bard:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BardAI/BardAI.yaml
+    url: https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BardAI/BardAI.yaml
     path: ./ruleset/bard.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   openai:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
+    url: https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
     path: ./ruleset/openai.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   steam:
-    url: >-
-      https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml
+    url: https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml
     path: ./ruleset/steam.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
+
 proxy-groups:
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Static.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: PROXY
-    type: select
     proxies:
       - AUTO
       - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
+    name: PROXY
+    type: select
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -211,53 +310,53 @@ proxy-groups:
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/OpenAI.png'
+    proxies:
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
     name: AIGC
     type: select
+  - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Telegram.png'
     proxies:
+      - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
-  - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Telegram.png'
     name: Telegram
     type: select
+  - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Google.png'
     proxies:
       - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
-  - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Google.png'
     name: Google
     type: select
-    proxies:
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/HK.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)香港|Hong Kong|HK|\U0001F1ED\U0001F1F0"
+    filter: "(?i)香港|Hong Kong|HK|🇭🇰"
     name: HK AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/SG.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)新加坡|Singapore|\U0001F1F8\U0001F1EC"
+    filter: "(?i)新加坡|Singapore|🇸🇬"
     name: SG AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/JP.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)日本|Japan|\U0001F1EF\U0001F1F5"
+    filter: "(?i)日本|Japan|🇯🇵"
     name: JP AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/US.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)美国|USA|\U0001F1FA\U0001F1F8"
+    filter: "(?i)美国|USA|🇺🇸"
     name: US AUTO
     type: url-test
     interval: 300
@@ -276,6 +375,7 @@ proxy-groups:
       - US AUTO
     name: GLOBAL
     type: select
+
 rules:
   - 'PROCESS-NAME,subs-check.exe,DIRECT'
   - 'PROCESS-NAME,subs-check,DIRECT'
