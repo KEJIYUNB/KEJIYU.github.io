@@ -1,11 +1,4 @@
-proxies:
-  - name: "🇸🇬 坏小子雅各布 新加坡 (emby，0.01倍节点)"
-    type: ss
-    server: afgawe-01.484845845.xyz
-    port: 37368
-    cipher: aes-128-gcm
-    password: "98b102df-4416-41f9-9684-9022700a6803"
-    udp: true
+proxies
   - name: "🇭🇰 香港 3"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
