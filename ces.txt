@@ -1,4 +1,4 @@
-proxies:
+Proxies:
   - name: "🇸🇬 坏小子雅各布 新加坡 (emby，0.01倍节点)"
     type: ss
     server: afgawe-01.484845845.xyz
@@ -102,6 +102,100 @@ proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇺🇸 美国 03（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8773
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇯🇵 日本 09（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8769
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇸🇬 新加坡 05（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8725
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 10（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8760
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 04（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8754
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 05（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8755
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇯🇵 日本 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awsjp.tetocloud.store
+    port: 60445
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇺🇸 美国 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awsjp.tetocloud.store
+    port: 24677
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇹🇼 台湾 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: "2600:1900:4030:98c0::"
+    port: 80
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
+  - name: "🇸🇬 新加坡 IPv6 （新（坏小子雅各布））"
+    type: ss
+    server: v6.awssg.tetocloud.store
+    port: 53647
+    cipher: aes-128-gcm
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    udp: true
 
 rule-providers:
   private:
