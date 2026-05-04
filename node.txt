@@ -1,11 +1,18 @@
-Proxies:
+proxies:
+  - name: "🇸🇬 坏小子雅各布 新加坡 (emby，0.01倍节点)"
+    type: ss
+    server: afgawe-01.484845845.xyz
+    port: 37368
+    cipher: aes-128-gcm
+    password: "98b102df-4416-41f9-9684-9022700a6803"
+    udp: true
   - name: "🇭🇰 香港 3"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27020
+    cipher: auto
     uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
     alterId: 0
-    cipher: auto
     network: ws
     ws-opts:
       path: /hls
@@ -15,9 +22,9 @@ Proxies:
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27004
+    cipher: auto
     uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
     alterId: 0
-    cipher: auto
     network: ws
     ws-opts:
       path: /hls
@@ -27,9 +34,9 @@ Proxies:
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27002
+    cipher: auto
     uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
     alterId: 0
-    cipher: auto
     network: ws
     ws-opts:
       path: /hls
@@ -39,9 +46,9 @@ Proxies:
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 28002
+    cipher: auto
     uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
     alterId: 0
-    cipher: auto
     network: ws
     ws-opts:
       path: /hls
@@ -51,9 +58,9 @@ Proxies:
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27033
+    cipher: auto
     uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
     alterId: 0
-    cipher: auto
     network: ws
     ws-opts:
       path: /hls
@@ -63,9 +70,9 @@ Proxies:
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27025
+    cipher: auto
     uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
     alterId: 0
-    cipher: auto
     network: ws
     ws-opts:
       path: /hls
@@ -75,9 +82,9 @@ Proxies:
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27026
+    cipher: auto
     uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
     alterId: 0
-    cipher: auto
     network: ws
     ws-opts:
       path: /hls
@@ -87,14 +94,80 @@ Proxies:
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27006
+    cipher: auto
     uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
     alterId: 0
-    cipher: auto
     network: ws
     ws-opts:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
+  - name: "🇺🇸 美国 03（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8773
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇯🇵 日本 09（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8769
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇸🇬 新加坡 05（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8725
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 10（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8760
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 04（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8754
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 05（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8755
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
+    udp: true
   - name: "🇯🇵 日本 IPv6 （新（坏小子雅各布））"
     type: ss
     server: v6.awsjp.tetocloud.store
@@ -228,14 +301,14 @@ proxy-groups:
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Static.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: PROXY
-    type: select
     proxies:
       - AUTO
       - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
+    name: PROXY
+    type: select
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -243,53 +316,53 @@ proxy-groups:
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/OpenAI.png'
+    proxies:
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
     name: AIGC
     type: select
+  - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Telegram.png'
     proxies:
+      - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
-  - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Telegram.png'
     name: Telegram
     type: select
+  - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Google.png'
     proxies:
       - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
-  - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Google.png'
     name: Google
     type: select
-    proxies:
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/HK.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)香港|Hong Kong|HK|\U0001F1ED\U0001F1F0"
+    filter: "(?i)香港|Hong Kong|HK|🇭🇰"
     name: HK AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/SG.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)新加坡|Singapore|\U0001F1F8\U0001F1EC"
+    filter: "(?i)新加坡|Singapore|🇸🇬"
     name: SG AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/JP.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)日本|Japan|\U0001F1EF\U0001F1F5"
+    filter: "(?i)日本|Japan|🇯🇵"
     name: JP AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/US.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)美国|USA|\U0001F1FA\U0001F1F8"
+    filter: "(?i)美国|USA|🇺🇸"
     name: US AUTO
     type: url-test
     interval: 300
