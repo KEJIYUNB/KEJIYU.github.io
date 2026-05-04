@@ -161,33 +161,129 @@ proxies:
       mode: http
       host: 202604272046584-aPLp2jKuwB.download.microsoft.com
     udp: true
-  - name: "🇯🇵 日本 IPv6 （新（坏小子雅各布））"
-    type: ss
-    server: v6.awsjp.tetocloud.store
-    port: 60445
-    cipher: aes-128-gcm
+  - name: "🇭🇰 香港 (新(坏小子雅各布))"
+    type: anytls
+    server: 34.150.77.143
+    port: 443
     password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
     udp: true
-  - name: "🇺🇸 美国 IPv6 （新（坏小子雅各布））"
-    type: ss
-    server: v6.awsjp.tetocloud.store
-    port: 24677
-    cipher: aes-128-gcm
-    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+  - name: "🇯🇵 日本 (新(坏小子雅各布))"
+    type: vmess
+    server: 45.192.202.19
+    port: 11180
+    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      headers:
+        Host: ["gw.alicdn.com"]
+      path: ["/"]
+    client-fingerprint: chrome
     udp: true
-  - name: "🇹🇼 台湾 IPv6 （新（坏小子雅各布））"
-    type: ss
-    server: "2600:1900:4030:98c0::"
-    port: 80
-    cipher: aes-128-gcm
-    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+  - name: "🇹🇼 台湾 (新(坏小子雅各布))"
+    type: vmess
+    server: 45.192.202.19
+    port: 27164
+    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      headers:
+        Host: ["gw.alicdn.com"]
+      path: ["/"]
+    client-fingerprint: chrome
     udp: true
-  - name: "🇸🇬 新加坡 IPv6 （新（坏小子雅各布））"
-    type: ss
-    server: v6.awssg.tetocloud.store
-    port: 53647
-    cipher: aes-128-gcm
+  - name: "🇹🇼 台湾 2 (新(坏小子雅各布))"
+    type: anytls
+    server: 35.187.152.60
+    port: 14652
     password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
+    udp: true
+  - name: "🇲🇴 澳门 (新(坏小子雅各布))"
+    type: vmess
+    server: 82.40.42.194
+    port: 46934
+    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      headers:
+        Host: ["gw.alicdn.com"]
+      path: ["/"]
+    client-fingerprint: chrome
+    udp: true
+  - name: "🇭🇰 香港 2 (新(坏小子雅各布))"
+    type: vmess
+    server: 45.192.202.19
+    port: 43257
+    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      headers:
+        Host: ["gw.alicdn.com"]
+      path: ["/"]
+    client-fingerprint: chrome
+    udp: true
+  - name: "🇯🇵 日本 2 (新(坏小子雅各布))"
+    type: anytls
+    server: v4.awsjp.tetocloud.store
+    port: 1871
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
+    udp: true
+  - name: "🇺🇸 美国 (新(坏小子雅各布))"
+    type: anytls
+    server: v4.awsjp.tetocloud.store
+    port: 1981
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
+    udp: true
+  - name: "🇯🇵 日本 3 (新(坏小子雅各布))"
+    type: vmess
+    server: 45.192.201.134
+    port: 10080
+    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      headers:
+        Host: ["gw.alicdn.com"]
+      path: ["/"]
+    client-fingerprint: chrome
+    udp: true
+  - name: "🇬🇧 英国 (新(坏小子雅各布))"
+    type: anytls
+    server: v4.hinet.tetocloud.store
+    port: 16446
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
+    udp: true
+  - name: "🇺🇸 美国 2 (新(坏小子雅各布))"
+    type: vmess
+    server: 140.150.236.136
+    port: 26229
+    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      headers:
+        Host: ["gw.alicdn.com"]
+      path: ["/"]
+    client-fingerprint: chrome
     udp: true
 
 rule-providers:
