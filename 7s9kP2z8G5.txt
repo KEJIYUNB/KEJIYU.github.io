@@ -23,7 +23,7 @@ proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 香港 2"
+  - name: "🇭🇰 香港 1"
     type: vmess
     server: 366-1095.rabbitpro-in-3.com
     port: 27002
