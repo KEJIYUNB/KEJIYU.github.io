@@ -95,72 +95,6 @@ proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇺🇸 美国 03"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8773
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
-    udp: true
-  - name: "🇯🇵 日本 09"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8769
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
-    udp: true
-  - name: "🇸🇬 新加坡 05"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8725
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
-    udp: true
-  - name: "🇭🇰 香港 10"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8760
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
-    udp: true
-  - name: "🇭🇰 香港 04"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8754
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
-    udp: true
-  - name: "🇭🇰 香港 05"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8755
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604272046584-aPLp2jKuwB.download.microsoft.com
-    udp: true
   - name: "🇭🇰 香港 （新（坏小子））"
     type: anytls
     server: 34.150.77.143
@@ -169,7 +103,7 @@ proxies:
     skip-cert-verify: true
     sni: bing.com
     udp: true
-  - name: "🇹🇼 台湾 （新（坏小子））"
+  - name: "🇨🇳 台湾 （新（坏小子））"
     type: anytls
     server: 35.187.152.60
     port: 14652
@@ -272,6 +206,72 @@ proxies:
     plugin-opts:
       mode: http
       host: 202604260032388-14jUM6L5XQ.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 20（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8720
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-pd6BImSp7N.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 14（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8714
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-pd6BImSp7N.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 15（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8715
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-pd6BImSp7N.download.microsoft.com
+    udp: true
+  - name: "🇸🇬 新加坡 05（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8725
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-pd6BImSp7N.download.microsoft.com
+    udp: true
+  - name: "🇯🇵 日本 07（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8767
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-pd6BImSp7N.download.microsoft.com
+    udp: true
+  - name: "🇺🇸 美国 03（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8773
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604272046584-pd6BImSp7N.download.microsoft.com
     udp: true
 
 rule-providers:
@@ -432,28 +432,28 @@ proxy-groups:
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/HK.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)香港|Hong Kong|HK|\U0001F1ED\U0001F1F0"
+    filter: "(?i)香港|Hong Kong|HK|🇭🇰"
     name: HK AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/SG.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)新加坡|Singapore|\U0001F1F8\U0001F1EC"
+    filter: "(?i)新加坡|Singapore|🇸🇬"
     name: SG AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/JP.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)日本|Japan|\U0001F1EF\U0001F1F5"
+    filter: "(?i)日本|Japan|🇯🇵"
     name: JP AUTO
     type: url-test
     interval: 300
   - icon: 'https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/US.png'
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: "(?i)美国|USA|\U0001F1FA\U0001F1F8"
+    filter: "(?i)美国|USA|🇺🇸"
     name: US AUTO
     type: url-test
     interval: 300
