@@ -95,22 +95,6 @@ proxies:
       path: /hls
       headers:
         Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 HK_2（坏小子）"
-    type: anytls
-    server: v4.awshk.tetocloud.store
-    port: 1943
-    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
-    skip-cert-verify: true
-    sni: bing.com
-    udp: true
-  - name: "🇺🇸 US_1（坏小子）"
-    type: anytls
-    server: v4.hinet.tetocloud.store
-    port: 16446
-    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
-    skip-cert-verify: true
-    sni: bing.com
-    udp: true
   - name: "🇭🇰 HK_1（新（坏小子））"
     type: anytls
     server: 34.150.77.143
@@ -128,18 +112,12 @@ proxies:
     sni: bing.com
     udp: true
   - name: "🇯🇵 JP_1（新（坏小子））"
-    type: vmess
-    server: 45.192.201.134
-    port: 10080
-    uuid: 51a050f3-0652-4418-886b-ebeb70c9b2fc
-    alterId: 0
-    cipher: auto
-    network: http
-    http-opts:
-      headers:
-        Host: ["gw.alicdn.com"]
-      path: ["/"]
-    client-fingerprint: chrome
+    type: anytls
+    server: v4.awsjp.tetocloud.store
+    port: 1871
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
     udp: true
   - name: "🇺🇸 美国 06（新）"
     type: ss
@@ -167,6 +145,17 @@ proxies:
     type: ss
     server: efan118958656.efan1158958.com
     port: 8723
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604260032388-CwoyzMRWMy.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 19（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8719
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
