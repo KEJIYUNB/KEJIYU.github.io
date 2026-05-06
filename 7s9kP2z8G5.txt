@@ -1,124 +1,4 @@
 proxies:
-  - name: "🇭🇰 香港 3"
-    type: vmess
-    server: 366-1095.rabbitpro-in-3.com
-    port: 27020
-    cipher: auto
-    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
-    alterId: 0
-    network: ws
-    ws-opts:
-      path: /hls
-      headers:
-        Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 香港 4"
-    type: vmess
-    server: 366-1095.rabbitpro-in-3.com
-    port: 27004
-    cipher: auto
-    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
-    alterId: 0
-    network: ws
-    ws-opts:
-      path: /hls
-      headers:
-        Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 香港 1"
-    type: vmess
-    server: 366-1095.rabbitpro-in-3.com
-    port: 27002
-    cipher: auto
-    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
-    alterId: 0
-    network: ws
-    ws-opts:
-      path: /hls
-      headers:
-        Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 香港 7"
-    type: vmess
-    server: 366-1095.rabbitpro-in-3.com
-    port: 28002
-    cipher: auto
-    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
-    alterId: 0
-    network: ws
-    ws-opts:
-      path: /hls
-      headers:
-        Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇵🇭 菲律宾 12"
-    type: vmess
-    server: 366-1095.rabbitpro-in-3.com
-    port: 27033
-    cipher: auto
-    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
-    alterId: 0
-    network: ws
-    ws-opts:
-      path: /hls
-      headers:
-        Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇸🇬 新加坡 4"
-    type: vmess
-    server: 366-1095.rabbitpro-in-3.com
-    port: 27025
-    cipher: auto
-    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
-    alterId: 0
-    network: ws
-    ws-opts:
-      path: /hls
-      headers:
-        Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇯🇵 日本 1"
-    type: vmess
-    server: 366-1095.rabbitpro-in-3.com
-    port: 27026
-    cipher: auto
-    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
-    alterId: 0
-    network: ws
-    ws-opts:
-      path: /hls
-      headers:
-        Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇺🇸 美国 2"
-    type: vmess
-    server: 366-1095.rabbitpro-in-3.com
-    port: 27006
-    cipher: auto
-    uuid: 8856b0c5-ad8f-337f-a025-39e40415f6c3
-    alterId: 0
-    network: ws
-    ws-opts:
-      path: /hls
-      headers:
-        Host: mirrors.tuna.tsinghua.edu.cn
-  - name: "🇭🇰 HK_1（新（坏小子））"
-    type: anytls
-    server: 34.150.77.143
-    port: 443
-    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
-    skip-cert-verify: true
-    sni: bing.com
-    udp: true
-  - name: "🇨🇳 TW_1（新（坏小子））"
-    type: anytls
-    server: 35.187.152.60
-    port: 14652
-    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
-    skip-cert-verify: true
-    sni: bing.com
-    udp: true
-  - name: "🇯🇵 JP_1（新（坏小子））"
-    type: anytls
-    server: v4.awsjp.tetocloud.store
-    port: 1871
-    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
-    skip-cert-verify: true
-    sni: bing.com
-    udp: true
   - name: "🇺🇸 美国 06（新）"
     type: ss
     server: efan118958656.efan1158958.com
@@ -184,6 +64,30 @@ proxies:
     plugin-opts:
       mode: http
       host: 202604260032388-CwoyzMRWMy.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港 1（（新）坏小子）"
+    type: anytls
+    server: 34.150.77.143
+    port: 443
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
+    udp: true
+  - name: "🇨🇳 台湾 1（（新）坏小子）"
+    type: anytls
+    server: 35.187.152.60
+    port: 14652
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
+    udp: true
+  - name: "🇯🇵 日本 1（（新）坏小子）"
+    type: anytls
+    server: v4.awsjp.tetocloud.store
+    port: 1871
+    password: "261ba11b-f0d5-471f-a274-1d0364634b29"
+    skip-cert-verify: true
+    sni: bing.com
     udp: true
 
 rule-providers:
