@@ -1,16 +1,49 @@
 proxies:
-  - name: "🇺🇸 美国 06（新）"
+  - name: "🇭🇰 香港14（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8776
+    port: 8714
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-CwoyzMRWMy.download.microsoft.com
+      host: 202604260032388-SHExIz7Wt3.download.microsoft.com
     udp: true
-  - name: "🇯🇵 日本 04（新）"
+  - name: "🇭🇰 香港12（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8712
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604260032388-SHExIz7Wt3.download.microsoft.com
+    udp: true
+  - name: "🇭🇰 香港06（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8756
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604260032388-SHExIz7Wt3.download.microsoft.com
+    udp: true
+  - name: "🇸🇬 新加坡08（新）"
+    type: ss
+    server: efan118958656.efan1158958.com
+    port: 8728
+    cipher: rc4-md5
+    password: "efanccyun"
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 202604260032388-SHExIz7Wt3.download.microsoft.com
+    udp: true
+  - name: "🇯🇵 日本04（新）"
     type: ss
     server: efan118958656.efan1158958.com
     port: 8764
@@ -19,53 +52,20 @@ proxies:
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-CwoyzMRWMy.download.microsoft.com
+      host: 202604260032388-SHExIz7Wt3.download.microsoft.com
     udp: true
-  - name: "🇸🇬 新加坡 03（新）"
+  - name: "🇺🇸 美国04（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8723
+    port: 8774
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-CwoyzMRWMy.download.microsoft.com
+      host: 202604260032388-SHExIz7Wt3.download.microsoft.com
     udp: true
-  - name: "🇭🇰 香港 19（新）"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8719
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604260032388-CwoyzMRWMy.download.microsoft.com
-    udp: true
-  - name: "🇭🇰 香港 10（新）"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8760
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604260032388-CwoyzMRWMy.download.microsoft.com
-    udp: true
-  - name: "🇭🇰 香港 11（新）"
-    type: ss
-    server: efan118958656.efan1158958.com
-    port: 8711
-    cipher: rc4-md5
-    password: "efanccyun"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 202604260032388-CwoyzMRWMy.download.microsoft.com
-    udp: true
-  - name: "🇭🇰 香港 1（（新）坏小子）"
+  - name: "🇭🇰 香港（（新）坏小子）"
     type: anytls
     server: 34.150.77.143
     port: 443
@@ -73,7 +73,7 @@ proxies:
     skip-cert-verify: true
     sni: bing.com
     udp: true
-  - name: "🇨🇳 台湾 1（（新）坏小子）"
+  - name: "🇨🇳 台湾（（新）坏小子）"
     type: anytls
     server: 35.187.152.60
     port: 14652
@@ -81,7 +81,7 @@ proxies:
     skip-cert-verify: true
     sni: bing.com
     udp: true
-  - name: "🇯🇵 日本 1（（新）坏小子）"
+  - name: "🇯🇵 日本（（新）坏小子）"
     type: anytls
     server: v4.awsjp.tetocloud.store
     port: 1871
