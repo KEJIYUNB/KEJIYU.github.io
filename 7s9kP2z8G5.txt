@@ -1,69 +1,69 @@
 proxies:
-  - name: "🇺🇸 美国10（新）"
+  - name: "🇭🇰 香港04（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8780
+    port: 8754
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-XAYnP9OGUP.download.microsoft.com
+      host: 202604260032388-XhUR5wWfcE.download.microsoft.com
     udp: true
-  - name: "🇯🇵 日本10（新）"
+  - name: "🇭🇰 香港17（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8770
+    port: 8717
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-XAYnP9OGUP.download.microsoft.com
+      host: 202604260032388-XhUR5wWfcE.download.microsoft.com
     udp: true
-  - name: "🇸🇬 新加坡01（新）"
+  - name: "🇭🇰 香港06（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8721
+    port: 8756
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-XAYnP9OGUP.download.microsoft.com
+      host: 202604260032388-XhUR5wWfcE.download.microsoft.com
     udp: true
-  - name: "🇭🇰 香港11（新）"
+  - name: "🇸🇬 新加坡07（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8711
+    port: 8727
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-XAYnP9OGUP.download.microsoft.com
+      host: 202604260032388-XhUR5wWfcE.download.microsoft.com
     udp: true
-  - name: "🇭🇰 香港16（新）"
+  - name: "🇯🇵 日本08（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8716
+    port: 8768
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-XAYnP9OGUP.download.microsoft.com
+      host: 202604260032388-XhUR5wWfcE.download.microsoft.com
     udp: true
-  - name: "🇭🇰 香港12（新）"
+  - name: "🇺🇸 美国02（新）"
     type: ss
     server: efan118958656.efan1158958.com
-    port: 8712
+    port: 8772
     cipher: rc4-md5
     password: "efanccyun"
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202604260032388-XAYnP9OGUP.download.microsoft.com
+      host: 202604260032388-XhUR5wWfcE.download.microsoft.com
     udp: true
   - name: "🇭🇰 香港（（新）坏小子）"
     type: anytls
