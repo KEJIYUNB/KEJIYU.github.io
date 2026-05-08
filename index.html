@@ -36,6 +36,7 @@
       --shadow-md: 0 18px 48px rgba(0,0,0,0.34);
       --shadow-lg: 0 30px 90px rgba(0,0,0,0.48);
       --hero-gradient: linear-gradient(135deg, #ffffff 0%, #c8ffdd 26%, #88ffc0 45%, #8ebdff 68%, #d7c6ff 84%, #ffffff 100%);
+      --btn-gradient: linear-gradient(135deg, #63ffa0 0%, #31b55a 38%, #60a5fa 100%);
       --bgx: 50%;
       --bgy: 50%;
     }
@@ -89,12 +90,6 @@
     @keyframes auroraMove {
       from { transform: translate3d(0,0,0) scale(1); }
       to { transform: translate3d(3%, -2%, 0) scale(1.08); }
-    }
-
-    @keyframes liquidGradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
     }
 
     .noise {
@@ -168,16 +163,14 @@
       gap: 10px;
       padding: 10px 16px;
       border-radius: var(--radius-pill);
-      background: linear-gradient(135deg, rgba(99,255,160,0.12), rgba(96,165,250,0.12), rgba(168,85,247,0.12), rgba(99,255,160,0.12));
-      background-size: 300% 300%;
-      animation: liquidGradient 6s ease infinite;
-      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
       color: var(--text-soft);
       font-size: 0.92rem;
       margin-bottom: 18px;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      box-shadow: inset 0 0 10px rgba(255,255,255,0.05), var(--shadow-sm);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm);
       letter-spacing: .06em;
       text-transform: uppercase;
     }
@@ -229,13 +222,10 @@
       border-radius: var(--radius-pill);
       color: #dcfce7;
       font-weight: 700;
-      background: linear-gradient(135deg, rgba(96,165,250,0.12), rgba(168,85,247,0.12), rgba(99,255,160,0.12), rgba(96,165,250,0.12));
-      background-size: 300% 300%;
-      animation: liquidGradient 5s ease infinite;
-      border: 1px solid rgba(255,255,255,0.2);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      box-shadow: inset 0 0 10px rgba(255,255,255,0.05), var(--shadow-sm);
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.10);
+      backdrop-filter: blur(12px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
     }
 
     .typing-text {
@@ -290,17 +280,15 @@
 
     .intro {
       position: relative;
-      background: linear-gradient(135deg, rgba(99,255,160,0.08), rgba(96,165,250,0.08), rgba(168,85,247,0.08), rgba(99,255,160,0.08));
-      background-size: 300% 300%;
-      animation: liquidGradient 8s ease infinite;
-      border: 1px solid rgba(255,255,255,0.15);
+      background: linear-gradient(180deg, rgba(20,29,52,.78), rgba(11,18,33,.72));
+      border: 1px solid var(--panel-border);
       border-radius: var(--radius-xl);
       padding: 32px 28px;
       margin: 0;
       text-align: left;
-      box-shadow: inset 0 0 20px rgba(255,255,255,0.05), var(--shadow-lg);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.06);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
       overflow: hidden;
       z-index: 4;
       transform-style: preserve-3d;
@@ -338,8 +326,8 @@
     @keyframes rotateBorder { to { transform: rotate(360deg); } }
 
     .intro:hover {
-      border-color: rgba(99,255,160,.30);
-      box-shadow: 0 30px 80px rgba(0,0,0,.42), 0 0 30px rgba(99,255,160,.12), inset 0 1px 0 rgba(255,255,255,.1);
+      border-color: rgba(99,255,160,.20);
+      box-shadow: 0 30px 80px rgba(0,0,0,.42), 0 0 30px rgba(99,255,160,.08), inset 0 1px 0 rgba(255,255,255,.06);
     }
 
     .intro:hover .intro-spotlight { opacity: 1; }
@@ -412,22 +400,14 @@
     .btn:active { transform: translateY(0); }
 
     .btn.primary {
-      background: linear-gradient(135deg, rgba(99,255,160,0.25), rgba(96,165,250,0.25), rgba(168,85,247,0.25), rgba(99,255,160,0.25));
-      background-size: 300% 300%;
-      animation: liquidGradient 5s ease infinite;
-      color: #ffffff;
-      border: 1px solid rgba(255,255,255,0.3);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      text-shadow: 0 1px 3px rgba(0,0,0,0.4);
-      box-shadow: inset 0 0 12px rgba(255,255,255,0.1), 0 16px 38px rgba(18,30,70,.28), 0 0 34px rgba(99,255,160,.14);
+      background: var(--btn-gradient);
+      color: #04110a;
+      box-shadow: 0 16px 38px rgba(18,30,70,.28), 0 0 34px rgba(99,255,160,.14);
     }
 
     .btn.primary:hover {
       transform: translateY(-2px);
-      background: linear-gradient(135deg, rgba(99,255,160,0.35), rgba(96,165,250,0.35), rgba(168,85,247,0.35), rgba(99,255,160,0.35));
-      background-size: 300% 300%;
-      box-shadow: inset 0 0 12px rgba(255,255,255,0.15), 0 20px 46px rgba(18,30,70,.36), 0 0 40px rgba(99,255,160,.18);
+      box-shadow: 0 20px 46px rgba(18,30,70,.36), 0 0 40px rgba(99,255,160,.18);
     }
 
     .btn.secondary {
