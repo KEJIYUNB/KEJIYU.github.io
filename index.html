@@ -57,6 +57,11 @@
       display: flex;
       justify-content: center;
       padding: 72px 20px 40px;
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%2363ffa0' d='M4 2l15 11-6.5 1 4.5 7.5-2.5 1.5-4.5-7.5-5.5 5.5z'/></svg>") 4 2, auto;
+    }
+
+    a, button, .btn, .link-chip {
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23ffffff' d='M4 2l15 11-6.5 1 4.5 7.5-2.5 1.5-4.5-7.5-5.5 5.5z'/></svg>") 4 2, pointer !important;
     }
 
     body::before {
@@ -378,7 +383,6 @@
       text-decoration: none;
       font-size: 1.03rem;
       font-weight: 800;
-      cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
       will-change: transform;
       isolation: isolate;
@@ -400,7 +404,9 @@
     .btn:active { transform: translateY(0); }
 
     .btn.primary {
-      background: var(--btn-gradient);
+      background: linear-gradient(135deg, #63ffa0, #31b55a, #60a5fa, #31b55a, #63ffa0);
+      background-size: 300% 100%;
+      animation: softBtnFlow 6s linear infinite;
       color: #04110a;
       box-shadow: 0 16px 38px rgba(18,30,70,.28), 0 0 34px rgba(99,255,160,.14);
     }
@@ -408,6 +414,11 @@
     .btn.primary:hover {
       transform: translateY(-2px);
       box-shadow: 0 20px 46px rgba(18,30,70,.36), 0 0 40px rgba(99,255,160,.18);
+    }
+
+    @keyframes softBtnFlow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
     }
 
     .btn.secondary {
